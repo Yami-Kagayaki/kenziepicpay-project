@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="style.css">
   <title>PicPro|Kenzie+PicPay</title>
 </head>
@@ -12,82 +13,89 @@
 <body>
 
   <!--cabeçalho-->
-  <header>
-    <div>
-      <figure>
-        <img src="./img/logo-picpro.png" alt="logo PicPro">
+  <header class="cabecalho">
+    <div class="conteiner">
+      <figure class="logo_picpro">
+        <img src="./img/logo-picpro.png" alt="logo-picpro">
       </figure>
-      <figure>
-        <img src="./img/logo-kenzie.png" alt="logo Kenzie">
+      <figure class="logo_kenzie">
+        <img src="./img/logo-kenzie.png" alt="logo-kenzie">
       </figure>
     </div>
   </header>
 
   <!--conteudo-->
   <main>
+
     <!--imutável-->
-    <section>
-      <div>
+    <section class="detalhesConta">
+
+      <!--Conteudo de cima-->
+      <div class="usuario">
         <img src="./img/usuario.png" alt="Ícone de User">
         <p>Olá, <strong>@VanessaCamargo</strong></p>
       </div>
-      <div>
+
+      <div class="saldo">
         <p>Saldo PicPay, <strong>R$ 263,67</strong></p>
         <button>Extrato</button>
       </div>
-      <ul>
-        <li>
+
+      <!--Botões-->
+      <ul class="opcoesTransacoes">
+        <li class="itemTransacao">
           <img src="./img/qrcode.png" alt="Icone qrcode">
           <p>QR Code</p>
         </li>
-        <li>
+        <li class="itemTransacao">
           <img src="./img/pix.png" alt="Icone pix">
           <p>Pix</p>
         </li>
-        <li>
+        <li class="itemTransacao">
           <img src="./img/codigo.png" alt="Icone Boleto">
           <p>Pagar Boleto</p>
         </li>
-        <li>
+        <li class="itemTransacao">
           <img src="./img/cobrar-icon.png" alt="Icone Cobrar">
           <p>Cobrar</p>
         </li>
       </ul>
     </section>
+
     <!--mutável-->
-    <section>
-      <div>
+    <section class="transacao">
+      <div class="conteiner">
 
         <!--Selecionar Pagamento-->
-        <div>
+        <div class="selecionarPagamento">
           <p><strong>Selecione</strong> a forma de <strong>Pagamento</strong></p>
           <img src="./img/banner.png" alt="">
         </div>
 
         <!--qrcode-->
-        <div>
+        <div class="qrcode">
           <img src="./img/QRCode_Fácil.svg" alt="">
           <p>@MeuLinkedIn</p>
-          <strong>Compartilhar meu Código</strong>
+          <strong>Compartilhe :)</strong>
         </div>
 
         <!--pix-->
-        <div>
+        <div class="pix">
           <img src="img/pix-logo.png" alt="">
           <!--pix1-->
-          <div>
+          <div class="boxop">
             <img src="./img/pix1.png" alt="">
             <p>Envie por CPF/CNPJ, telefone, e-mail ou chave aleatória</p>
           </div>
           <!--pix2-->
-          <div>
+          <div class="boxop">
             <img src="./img/pix2.png" alt="">
             <p>Insira o código cópia e cola</p>
           </div>
         </div>
 
         <!--boleto-->
-        <div>
+        <div class="boleto">
           <img src="./img/boleto.png" alt="">
           <h2>Pagar com o código de barras</h2>
           <p>Parcele em até 12x no Cartão de Crédito</p>
@@ -95,11 +103,11 @@
         </div>
 
         <!--cobrar-->
-        <div>
+        <div class="cobrar">
           <img src="./img/cobrar.png" alt="">
           <h2>Cobrar</h2>
           <p>Divida a conta com os <strong>Amigos</strong></p>
-          <div>
+          <div class="boxop">
             <img src="./img/picpay-icon.png" alt="">
             <p><strong>Amigos do PicPay</strong> Divida e acompanhe o gasto com pessoas por aqui</p>
           </div>
@@ -107,36 +115,37 @@
 
       </div>
     </section>
+
   </main>
 
   <!--rodapé-->
-  <footer>
-    <ul>
-      <li>
+  <footer class="rodape">
+    <ul class="menu">
+      <li class="mitem">
         <a href="#">
           <img src="./img/inicio.png" alt="">
           <p>Início</p>
         </a>
       </li>
-      <li>
+      <li class="mitem">
         <a href="#">
           <img src="./img/carteira-icon.png" alt="">
           <p>Carteira</p>
         </a>
       </li>
-      <li>
+      <li class="mitem">
         <a href="#">
           <img src="./img/pagar.png" alt="">
           <p>Pagar</p>
         </a>
       </li>
-      <li>
+      <li class="mitem">
         <a href="#">
           <img src="./img/notificacao.png" alt="">
           <p>Notificações</p>
         </a>
       </li>
-      <li>
+      <li class="mitem">
         <a href="#">
           <img src="./img/bolsa.png" alt="">
           <p>Loja</p>

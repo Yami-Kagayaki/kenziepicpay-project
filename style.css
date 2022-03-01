@@ -1,9 +1,110 @@
-* {
-  margin: 0%;
-  border: 0%;
-  padding: 0%;
+body {
+  background-color: #4a8864;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-body {
-  background-color: green;
+.cabecalho {
+  padding: 20px 0;
+  border-bottom: 1px solid white;
+}
+
+.cabecalho .conteiner {
+  display: flex;
+  align-items: center;
+}
+
+.detalhesConta {
+  color: white;
+  padding: 60px 0 30px;
+}
+
+.usuario {
+  display: flex;
+}
+
+.usuario img {
+  width: 100%;
+  max-width: 50px;
+}
+.usuario p {
+  font-size: 18px;
+  margin-left: 10px;
+}
+.usuario p strong {
+  display: block;
+  font-weight: bold;
+}
+
+.saldo {
+  border-top: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 0;
+  align-items: center;
+}
+
+.saldo p {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.saldo p strong {
+  display: block;
+  font-weight: bold;
+}
+
+.saldo button {
+  cursor: pointer;
+  border: none;
+  background-color: white;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 10px 60px;
+  border-radius: 20px;
+}
+
+.opcoesTransacoes {
+  display: flex;
+  justify-content: space-between;
+}
+
+.itemTransacao {
+  background-color: #1f6f54;
+  width: 170px;
+  height: 177px;
+  border-radius: 20px;
+  padding: 40px 40px;
+}
+
+.itemTransacao img {
+  width: 100%;
+  max-width: 40px;
+}
+
+.itemTransacao p {
+  font-weight: bold;
+  font-size: 18px;
+  margin-top: 10px;
+  line-height: 25px;
+  width: 80px;
+}
+
+.transacao {
+  background-color: white;
+  border-radius: 20px 20px 0 0;
+  border-bottom: 15px solid #f0f0f0;
+  padding: 30px 0;
+}
+
+.selecionarPagamento p {
+  box-shadow: 2px 2px 4px black;
+  padding: 30px 60px;
+  border-radius: 10px;
+  font-size: 25px;
+  border: 1px solid black;
+}
+
+.selecionarPagamento img {
+  width: 100%;
+  margin: 30px 0 90px;
 }
