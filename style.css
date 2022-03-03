@@ -1,6 +1,12 @@
 body {
   background-color: #4a8864;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+
+.conteiner {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 150px;
 }
 
 .cabecalho {
@@ -26,6 +32,7 @@ body {
   width: 100%;
   max-width: 50px;
 }
+
 .usuario p {
   font-size: 18px;
   margin-left: 10px;
@@ -97,7 +104,7 @@ body {
 }
 
 .selecionarPagamento p {
-  box-shadow: 2px 2px 4px black;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
   padding: 30px 60px;
   border-radius: 10px;
   font-size: 25px;
@@ -107,4 +114,129 @@ body {
 .selecionarPagamento img {
   width: 100%;
   margin: 30px 0 90px;
+}
+
+.qrcode {
+  text-align: center;
+}
+
+.qrcode img {
+  max-width: 180px;
+}
+
+.qrcode p {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.pix img {
+  width: 100%;
+  max-width: 150px;
+}
+
+.boxop {
+  display: flex;
+  align-items: center;
+  border: 1px solid #d2d2d2;
+  max-width: 500px;
+  padding: 14px 10px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.15);
+  margin: 20px 0;
+}
+
+.boxop img {
+  width: 100%;
+  max-width: 80px;
+  margin-right: 10px;
+}
+
+.boxop p {
+  font-size: 10px;
+  line-height: 20px;
+}
+
+.boleto img {
+  width: 100%;
+  max-width: 80px;
+}
+
+.boleto h2 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.boleto p {
+  font-size: 18px;
+  max-width: 500px;
+  margin: 20px 0;
+}
+
+.boleto input {
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #f4f4f4;
+  font-size: 16px;
+  height: 50px;
+  padding: 0 80px;
+  border-radius: 10px;
+  border: 1px solid #d2d2d2;
+  color: #000;
+}
+
+.cobrar img {
+  width: 100%;
+  max-width: 80px;
+}
+
+.cobrar h2 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.cobrar p {
+  font-size: 18px;
+  max-width: 500px;
+  margin: 20px 0;
+}
+
+.cobrar .boxop p {
+  margin-left: 10px;
+}
+
+.rodape {
+  background-color: #fff;
+}
+
+.rodape .menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rodape .menu li {
+  text-align: center;
+}
+
+.rodape .menu li a {
+  color: #000;
+  text-decoration: none;
+}
+
+.rodape .menu li a img {
+  width: 100%;
+  max-width: 40px;
+}
+
+.rodape .menu li a p {
+  margin-top: 20px;
+}
+
+.mitempagar {
+  transform: translateY(-35px);
+}
+
+.rodape .menu .mitempagar a img {
+  max-width: 80px;
 }
