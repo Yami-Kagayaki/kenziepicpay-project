@@ -3,6 +3,10 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+op {
+  display: block;
+}
+
 .conteiner {
   width: 100%;
   max-width: 800px;
@@ -26,6 +30,7 @@ body {
 
 .usuario {
   display: flex;
+  margin: 10px 0;
 }
 
 .usuario img {
@@ -101,6 +106,15 @@ body {
   border-radius: 20px 20px 0 0;
   border-bottom: 15px solid #f0f0f0;
   padding: 30px 0;
+  min-height: 450px;
+}
+
+.transacao .conteiner div {
+  display: none;
+}
+
+.transacao .conteiner div.show {
+  display: block;
 }
 
 .selecionarPagamento p {
@@ -239,4 +253,58 @@ body {
 
 .rodape .menu .mitempagar a img {
   max-width: 80px;
+}
+
+.itemTransacao:hover {
+  background-color: #fff;
+  color: #228664;
+}
+.itemTransacao figure {
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  height: 50px;
+  width: 50px;
+}
+
+.itemqrcode figure {
+  background-image: url("./img/qrcode.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: block;
+  height: 50px;
+  width: 50px;
+}
+.itempix figure {
+  background-image: url("./img/pix.png");
+}
+.itemboleto figure {
+  background-image: url("./img/codigo.png");
+  width: 100%;
+  max-width: 65px;
+}
+.itemcobrar figure {
+  background-image: url("./img/cobrar-icon.png");
+  width: 100%;
+  max-width: 60px;
+}
+
+.itemqrcode:hover figure {
+  background-image: url("./img/qrcode-verde.png");
+}
+.itempix:hover figure {
+  background-image: url("./img/pix-verde.png");
+}
+.itemboleto:hover figure {
+  background-image: url("./img/boleto-verde.png");
+}
+.itemcobrar:hover figure {
+  background-image: url("./img/cobrar-verde.png");
+}
+
+.itemTransacao figure img {
+  width: 100%;
+  max-width: 25px;
+  height: 20px;
+  opacity: 0;
 }
