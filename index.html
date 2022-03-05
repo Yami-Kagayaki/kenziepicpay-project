@@ -10,6 +10,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="./img/picpay-icon.png" type="image/x-icon">
   <title>PicPro|Kenzie+PicPay</title>
 </head>
 
@@ -46,20 +47,20 @@
 
         <!--Botões-->
         <ul class="opcoesTransacoes">
-          <li class="itemTransacao">
-            <img src="./img/qrcode.png" alt="Icone qrcode">
+          <li id="1" class="itemTransacao itemqrcode">
+            <figure><img src="./img/qrcode.png" alt="Icone qrcode"></figure>
             <p>QR Code</p>
           </li>
-          <li class="itemTransacao">
-            <img src="./img/pix.png" alt="Icone pix">
+          <li id="2" class="itemTransacao itempix">
+            <figure><img src="./img/pix.png" alt="Icone pix"></figure>
             <p>Pix</p>
           </li>
-          <li class="itemTransacao">
-            <img src="./img/codigo.png" alt="Icone Boleto">
+          <li id="3" class="itemTransacao itemboleto">
+            <figure><img src="./img/codigo.png" alt="Icone Boleto"></figure>
             <p>Pagar Boleto</p>
           </li>
-          <li class="itemTransacao">
-            <img src="./img/cobrar-icon.png" alt="Icone Cobrar">
+          <li id="4" class="itemTransacao itemcobrar">
+            <figure><img src="./img/cobrar-icon.png" alt="Icone Cobrar"></figure>
             <p>Cobrar</p>
           </li>
         </ul>
@@ -71,35 +72,35 @@
       <div class="conteiner">
 
         <!--Selecionar Pagamento-->
-        <div class="selecionarPagamento">
+        <div class="selecionarPagamento show">
           <p><strong>Selecione</strong> a forma de <strong>Pagamento</strong></p>
           <img src="./img/banner.png" alt="">
         </div>
 
         <!--qrcode-->
-        <div class="qrcode">
+        <div data-id="1" class="qrcode">
           <img src="./img/QRCode_Fácil.svg" alt="">
           <p>@MeuLinkedIn</p>
           <strong>Compartilhe :)</strong>
         </div>
 
         <!--pix-->
-        <div class="pix">
+        <div data-id="2" class="pix">
           <img src="img/pix-logo.png" alt="">
           <!--pix1-->
-          <div class="boxop">
+          <op data-id="2" class="boxop">
             <img src="./img/pix1.png" alt="">
             <p>Envie por CPF/CNPJ, telefone, e-mail ou chave aleatória</p>
-          </div>
+          </op>
           <!--pix2-->
-          <div class="boxop">
+          <op data-id="2" class="boxop">
             <img src="./img/pix2.png" alt="">
             <p>Insira o código cópia e cola</p>
-          </div>
+          </op>
         </div>
 
         <!--boleto-->
-        <div class="boleto">
+        <div data-id="3" class="boleto">
           <img src="./img/boleto.png" alt="">
           <h2>Pagar com o código de barras</h2>
           <p>Parcele em até 12x no Cartão de Crédito</p>
@@ -107,14 +108,14 @@
         </div>
 
         <!--cobrar-->
-        <div class="cobrar">
+        <div data-id="4" class="cobrar">
           <img src="./img/cobrar.png" alt="">
           <h2>Cobrar</h2>
           <p>Divida a conta com os <strong>Amigos</strong></p>
-          <div class="boxop">
+          <op class="boxop">
             <img src="./img/picpay-icon.png" alt="">
             <p><strong>Amigos do PicPay</strong> Divida e acompanhe o gasto com pessoas por aqui</p>
-          </div>
+          </op>
         </div>
 
       </div>
@@ -160,6 +161,7 @@
     </div>
   </footer>
 
+  <script src="./script.js"></script>
 </body>
 
 </html>
